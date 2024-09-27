@@ -66,6 +66,7 @@ CREATE TABLE IF NOT EXISTS `transaction` (
 	price DECIMAL(10, 2),
     status ENUM('under payment', 'paid') NOT NULL,
     `servid` varchar(255),
+    `transdate` DATE NOT NULL,
   PRIMARY KEY (`transid`),
   KEY `pid` (`pid`),
   KEY `servid` (`servid`)
